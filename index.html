@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='bookClub'>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-XYCjB+hFAjSbgf9yKUgbysEjaVLOXhCgATTEBpCqT1R3jvG5LGRAK5ZIyRbH5vpX" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Gentium+Book+Basic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css" charset="utf-8">
+
+  <link rel="stylesheet" href="css/animate.css" charset="utf-8">
+  <script src="scripts/app.js" charset="utf-8"></script>
+  <title>Illerati Of Denver</title>
+</head>
+<body  ng-cloak scroll id="page" ng-class="{min:boolChangeClass}" ng-controller='MainController'>
+
+  <header class='jumbotron masthead'>
+    <div class='container'>
+    <h1>The Illiterati of Denver</h1>
+    <hr>
+    <h2>- Est. 2014 -</h2>
+  </div>
+  </header>
+  <main>
+  <div class="modal fade" tabindex="-1" id="signUp"role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title">Mailing List Sign Up</h3>
+      </div>
+      <div class="modal-body text-center">
+        <p>Text about signing up for the mailing list</p>
+        <a class="btn btn-success" href="#" role="button">Sign Up!</a>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+  <div class="container">
+    <nav class="row" >
+      <div class="col-xs-10 col-sm-12 col-md-10 col-lg-8 col-xs-offset-1 col-md-offset-1 col-lg-offset-2">
+        <ul class="nav nav-pills nav-justified">
+          <li ng-class="{'active': vm.aboutShow}"><a href="#/" ng-click="showAboutButton()">About</a></li>
+          <li ng-class="{'active': vm.currentBookShow}"><a href="#/" ng-click="showCurrentBookButton()">Currently Reading</a></li>
+          <li ng-class="{'active': vm.nextMeetingShow}"><a href="#/" ng-click="showNextMeetingButton()">Next Meeting</a></li>
+          <li ><a href="#/" id="sign-up" data-toggle="modal" data-target="#signUp">Join Us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="switch-container" ng-switch on="vm.selection">
+    <div class="row about" ng-switch-default>
+      <div class="col-xs-10 col-md-8 col-md-offset-2 col-xs-offset-1">
+        <h3>About Us</h3>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+
+    <div class="row current-book" ng-switch-when="currentBook">
+      <div class="col-xs-10 col-md-8 col-md-offset-2 col-xs-offset-1">
+        <h3>Current Book</h3>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+
+    <div class="row next-meeting" ng-switch-when="nextMeeting">
+      <div class="col-xs-10 col-md-8 col-md-offset-2 col-xs-offset-1">
+        <h3>Next Meeting</h3>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  <footer class="footer">
+    <div class="container-fluid text-center">
+      <h4><a href="#">Back To Top</a></h4>
+
+
+      <p>This is the footer text. Site by <a href="#/" target="blank">J Lincoln Dennis</a></p>
+    </div>
+  </footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,81 @@
+body {
+  padding-bottom: 70px;
+}
+
+header {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 150;
+}
+
+hr {
+  width: 70%;
+  border: 0;
+  height: 1px;
+  background: #fff;
+  background-image: linear-gradient(to right, rgb(43, 62, 81), #fff, rgb(43, 62, 81));
+}
+
+.min header {
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  h1 {
+    font-size: 36px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  h2, hr{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 0px;
+    height: 0px;
+    opacity: 0;
+  }
+}
+
+
+main {
+  margin-top: 325px;
+}
+
+.modal-header {
+  color: rgb(0, 189, 156);
+  background-color: #fff;
+  text-align: center;
+}
+
+
+
+.masthead {
+  text-align: center;
+  background: rgba(62,93,122,1);
+  background: -moz-linear-gradient(left, rgba(62,93,122,1) 0%, rgba(43,62,82,1) 40%, rgba(43,62,82,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(62,93,122,1)), color-stop(40%, rgba(43,62,82,1)), color-stop(100%, rgba(43,62,82,1)));
+  background: -webkit-linear-gradient(left, rgba(62,93,122,1) 0%, rgba(43,62,82,1) 40%, rgba(43,62,82,1) 100%);
+  background: -o-linear-gradient(left, rgba(62,93,122,1) 0%, rgba(43,62,82,1) 40%, rgba(43,62,82,1) 100%);
+  background: -ms-linear-gradient(left, rgba(62,93,122,1) 0%, rgba(43,62,82,1) 40%, rgba(43,62,82,1) 100%);
+  background: linear-gradient(to right, rgba(62,93,122,1) 0%, rgba(43,62,82,1) 40%, rgba(43,62,82,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e5d7a', endColorstr='#2b3e52', GradientType=1 );
+
+
+  color: white;
+  box-shadow:
+      0 1px 1px rgba(0,0,0,0.15), /* The top layer shadow */
+      0 10px 0 -5px #c8c6c6, /* The second layer */
+      0 10px 1px -4px rgba(0,0,0,0.15), /* The second layer shadow */
+}
+
+.about, .current-book, .next-meeting {
+  margin-top: 30px;
+}
+
+footer {
+  margin-top: 100px;
+  h4 {
+    margin-bottom: 30px;
+  }
+}

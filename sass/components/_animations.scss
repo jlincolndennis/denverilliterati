@@ -1,0 +1,18 @@
+.ng-enter {
+  animation: fadeIn .5s;
+}
+
+.min header {
+  transition: 1s  ease all;
+
+  h1, hr, h2 {
+    transition: 1s ease all;
+  }
+}
+
+header {
+  transition: 1s ease all;
+  h1, hr, h2 {
+    transition: 1s ease all;
+  }
+}

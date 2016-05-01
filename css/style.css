@@ -1,0 +1,99 @@
+body {
+  padding-bottom: 70px; }
+
+header {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 150; }
+
+hr {
+  width: 70%;
+  border: 0;
+  height: 1px;
+  background: #fff;
+  background-image: linear-gradient(to right, #2b3e51, #fff, #2b3e51); }
+
+.min header {
+  padding-top: 5px;
+  padding-bottom: 5px; }
+  .min header h1 {
+    font-size: 36px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .min header h2, .min header hr {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 0px;
+    height: 0px;
+    opacity: 0; }
+
+main {
+  margin-top: 325px; }
+
+.modal-header {
+  color: #00bd9c;
+  background-color: #fff;
+  text-align: center; }
+
+.masthead {
+  text-align: center;
+  background: #3e5d7a;
+  background: -moz-linear-gradient(left, #3e5d7a 0%, #2b3e52 40%, #2b3e52 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #3e5d7a), color-stop(40%, #2b3e52), color-stop(100%, #2b3e52));
+  background: -webkit-linear-gradient(left, #3e5d7a 0%, #2b3e52 40%, #2b3e52 100%);
+  background: -o-linear-gradient(left, #3e5d7a 0%, #2b3e52 40%, #2b3e52 100%);
+  background: -ms-linear-gradient(left, #3e5d7a 0%, #2b3e52 40%, #2b3e52 100%);
+  background: linear-gradient(to right, #3e5d7a 0%, #2b3e52 40%, #2b3e52 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e5d7a', endColorstr='#2b3e52', GradientType=1 );
+  color: white;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 10px 0 -5px #c8c6c6, 0 10px 1px -4px rgba(0, 0, 0, 0.15); }
+
+.about, .current-book, .next-meeting {
+  margin-top: 30px; }
+
+footer {
+  margin-top: 100px; }
+  footer h4 {
+    margin-bottom: 30px; }
+
+.masthead h1, .masthead h2 {
+  font-family: 'Gentium Book Basic', serif;
+  text-shadow: 1px 1px 2px black; }
+
+body {
+  font-family: 'Gentium Book Basic', serif; }
+
+.nav li {
+  font-family: 'Gentium Book Basic', serif;
+  font-size: 1.4em; }
+
+h3 {
+  color: #00bd9c; }
+
+p {
+  font-size: 1.2em; }
+
+#sign-up:focus {
+  background-color: white;
+  outline: none; }
+
+.nav li .active {
+  background: white; }
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+  background: #2b3e52; }
+
+.ng-enter {
+  animation: fadeIn .5s; }
+
+.min header {
+  transition: 1s  ease all; }
+  .min header h1, .min header hr, .min header h2 {
+    transition: 1s ease all; }
+
+header {
+  transition: 1s ease all; }
+  header h1, header hr, header h2 {
+    transition: 1s ease all; }
