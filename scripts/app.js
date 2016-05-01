@@ -4,7 +4,6 @@ app.directive("scroll", function ($window) {
     return function(scope, element, attrs) {
         angular.element($window).bind("scroll", function() {
              if (this.pageYOffset >= 50) {
-               console.log(this.pageYOffset);
                  scope.boolChangeClass = true;
                  scope.headerScroll = true;
              } else {
@@ -20,10 +19,20 @@ app.controller('MainController', function($scope){
 
   $scope.vm = {};
   $scope.elem = {};
+  $scope.vm.warning = false;
+
   $scope.vm.selection = 'about';
   $scope.vm.aboutShow = true;
   $scope.vm.currentBookShow = false;
   $scope.vm.nextMeetingShow = false;
+
+  $scope.showWarning = function () {
+    $scope.vm.warning = !$scope.vm.warning;
+  }
+
+  $scope.closeWarning = function () {
+    $scope.vm.warning = false;
+  }
 
   $scope.showAboutButton = function () {
     $scope.vm.selection = "about";

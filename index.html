@@ -39,7 +39,7 @@
       </div>
       <div class="modal-body text-center">
         <p>Text about signing up for the mailing list</p>
-        <a class="btn btn-success" href="#" role="button">Sign Up!</a>
+        <a class="btn btn-success" href="https://tinyletter.com/denverilliterati" role="button">Sign Up!</a>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
@@ -47,10 +47,10 @@
 
   <div class="container">
     <nav class="row" >
-      <div class="col-xs-10 col-sm-12 col-md-10 col-lg-8 col-xs-offset-1 col-md-offset-1 col-lg-offset-2">
+      <div class="col-xs-10 col-sm-11 col-md-10 col-lg-8 col-xs-offset-1 col-md-offset-1 col-lg-offset-2">
         <ul class="nav nav-pills nav-justified">
           <li ng-class="{'active': vm.aboutShow}"><a href="#/" ng-click="showAboutButton()">About</a></li>
-          <li ng-class="{'active': vm.currentBookShow}"><a href="#/" ng-click="showCurrentBookButton()">Currently Reading</a></li>
+          <li ng-class="{'active': vm.currentBookShow}"><a href="#/" ng-click="showCurrentBookButton()">Current Book</a></li>
           <li ng-class="{'active': vm.nextMeetingShow}"><a href="#/" ng-click="showNextMeetingButton()">Next Meeting</a></li>
           <li ><a href="#/" id="sign-up" data-toggle="modal" data-target="#signUp">Join Us</a></li>
         </ul>
@@ -69,19 +69,48 @@
 
     <div class="row current-book" ng-switch-when="currentBook">
       <div class="col-xs-10 col-md-8 col-md-offset-2 col-xs-offset-1">
-        <h3>Current Book</h3>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h2>May's Selection</h2>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="col-xs-12 col-md-3">
+        <img class="img-responsive" src="http://ecx.images-amazon.com/images/I/51l94tOtndL._SX310_BO1,204,203,200_.jpg" alt="The Water Knife Cover">
+        </div>
+        <div class="col-md-8">
+          <h3>The Water Knife</h3>
+          <h4>by Paolo Bacigalupi</h4>
+          <a class="btn btn-success" href="http://www.amazon.com/Water-Knife-Novel-Paolo-Bacigalupi/dp/1469298325" target="_blank">Purchase from Amazon</a>
+          <a class="btn btn-default" href="http://catalog.denverlibrary.org/search/searchresults.aspx?ctx=1.1033.0.0.6&type=Default&term=The%20Water%20Knife&by=KW&sort=RELEVANCE&limit=TOM=*&query=&page=0&searchid=1" target="_blank">Search Denver Public Library</a>
+        </div>
+
+        <div class="col-md-12">
+          <h4>Summary:</h4>
+          <p>Paolo Bacigalupi, New York Times bestselling author and National Book Award Finalist, dives once again onto our uncertain future with his first thriller for adults since his multi-award winning debut phenomenon The Windup Girl.</p>
+
+        <p>In the American Southwest, Nevada, Arizona, and California skirmish for dwindling shares of the Colorado River. Into the fray steps Angel Velasquez, detective, leg-breaker, assassin, and spy. A Las Vegas water knife, Angel "cuts" water for his boss, Catherine Case, ensuring that her lush, luxurious arcology developments can bloom in the desert, so the rich can stay wet, while the poor get nothing but dust. When rumors of a game-changing water source surface in drought-ravaged Phoenix, Angel is sent to investigate. There, he encounters Lucy Monroe, a hardened journalist with no love for Vegas and every reason to hate Angel, and Maria Villarosa, a young Texas refugee who survives by her wits and street smarts in a city that despises everything that she represents.</p>
+
+        <p>With bodies piling up, bullets flying, and Phoenix teetering on collapse, it seems like California is making a power play to monopolize the life-giving flow of a river. For Angel, Lucy, and Maria time is running out and their only hope for survival rests in each other’s hands. But when water is more valuable than gold, alliances shift like sand, and the only thing for certain is that someone will have to bleed if anyone hopes to drink.</p>
+        </div>
+
+
       </div>
     </div>
 
     <div class="row next-meeting" ng-switch-when="nextMeeting">
       <div class="col-xs-10 col-md-8 col-md-offset-2 col-xs-offset-1">
-        <h3>Next Meeting</h3>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h2>Next Meeting</h2>
+        <h3>Monday May 2nd, 2016</h3>
+        <h4>Time: 7:00pm</h4>
+        <h4>Location: Sarah's House</h4>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <button class="btn btn-success" ng-click="showWarning()">Get Directions</button>
+
+        <div class="alert alert-dismissible alert-danger" ng-show="vm.warning">
+        <button type="button" class="close" ng-click="closeWarning()">&times;</button>
+        Our meetings are occasionally at one of member's homes. When that happens, we don't publish their address directly on our site. To get directions to this, and all upcoming meeings, please <a href="https://tinyletter.com/denverilliterati" target="_blank" class="alert-link">sign up for our newsletter</a>!
+        </div>
+
+        <p>Join us as we discuss <strong><em>The Water Knife</em></strong>! Also, Lincoln has a special announcement! What could it be? Who cares? The answer to these questions and more will be revealed at this meeting!</p>
+
+
       </div>
     </div>
 

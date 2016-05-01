@@ -53,6 +53,10 @@ main {
 .about, .current-book, .next-meeting {
   margin-top: 30px; }
 
+.current-book img {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
 footer {
   margin-top: 100px; }
   footer h4 {
@@ -84,6 +88,18 @@ p {
 
 .nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
   background: #2b3e52; }
+
+.current-book .btn {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 250px;
+  display: block; }
+
+.next-meeting .btn {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 250px;
+  display: block; }
 
 .ng-enter {
   animation: fadeIn .5s; }

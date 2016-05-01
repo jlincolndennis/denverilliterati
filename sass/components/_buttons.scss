@@ -10,3 +10,17 @@
 .nav-pills>li.active>a,.nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
   background: rgba(43,62,82,1);
 }
+
+.current-book .btn {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 250px;
+  display: block;
+}
+
+.next-meeting .btn {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 250px;
+  display: block;
+}
