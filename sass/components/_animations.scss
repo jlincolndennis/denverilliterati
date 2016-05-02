@@ -3,16 +3,16 @@
 }
 
 .min header {
-  transition: 1s  ease all;
+  transition: .6s ease-out all;
 
   h1, hr, h2 {
-    transition: 1s ease all;
+    transition: .6s ease-out all;
   }
 }
 
 header {
-  transition: 1s ease all;
+  transition: .6s ease-out all;
   h1, hr, h2 {
-    transition: 1s ease all;
+    transition: .6s ease-out all;
   }
 }
