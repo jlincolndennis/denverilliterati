@@ -3,7 +3,7 @@ var app = angular.module('bookClub', ['ngAnimate'])
 app.directive("scroll", function ($window) {
     return function(scope, element, attrs) {
         angular.element($window).bind("scroll", function() {
-             if (this.pageYOffset >= 50) {
+             if (this.pageYOffset >= 20) {
                  scope.boolChangeClass = true;
                  scope.headerScroll = true;
              } else {
