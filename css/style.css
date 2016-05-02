@@ -60,14 +60,11 @@ main {
 footer {
   margin-top: 100px; }
   footer h4 {
-    margin-bottom: 30px; }
+    margin-bottom: 50px; }
 
 .masthead h1, .masthead h2 {
   font-family: 'Gentium Book Basic', serif;
   text-shadow: 1px 1px 2px black; }
-
-body {
-  font-family: 'Gentium Book Basic', serif; }
 
 .nav li {
   font-family: 'Gentium Book Basic', serif;
@@ -78,6 +75,9 @@ h3 {
 
 p {
   font-size: 1.2em; }
+
+footer p {
+  font-size: .9em; }
 
 #sign-up:focus {
   background-color: white;
