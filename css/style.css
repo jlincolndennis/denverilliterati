@@ -102,11 +102,11 @@ footer p {
   animation: fadeIn .5s; }
 
 .min header {
-  transition: .6s ease-out all; }
+  transition: .6s ease all; }
   .min header h1, .min header hr, .min header h2 {
-    transition: .6s ease-out all; }
+    transition: .6s ease all; }
 
 header {
-  transition: .6s ease-out all; }
+  transition: .6s ease all; }
   header h1, header hr, header h2 {
-    transition: .6s ease-out all; }
+    transition: .6s ease all; }
