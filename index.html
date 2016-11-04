@@ -56,17 +56,17 @@
       <nav class="row">
         <div class="col-xs-10 col-sm-11 col-md-10 col-lg-8 col-xs-offset-1 col-md-offset-1 col-lg-offset-2">
           <ul class="nav nav-pills nav-justified">
-            <li ng-class="{'active': vm.aboutShow}"><a href="#/" ng-click="showAboutButton()">About</a></li>
-            <li ng-class="{'active': vm.currentBookShow}"><a href="#/" ng-click="showCurrentBookButton()">Current Book</a></li>
-            <li ng-class="{'active': vm.nextMeetingShow}"><a href="#/" ng-click="showNextMeetingButton()">Next Meeting</a></li>
+            <!-- <li ng-class="{'active': vm.aboutShow}"><a href="#" ng-click="showAboutButton()">About</a></li> -->
+            <li ng-class="{'active': vm.currentBookShow}"><a href="#currentBook" ng-click="showCurrentBookButton()">Current Book</a></li>
+            <li ng-class="{'active': vm.nextMeetingShow}"><a href="#nextMeeting" ng-click="showNextMeetingButton()">Next Meeting</a></li>
             <li ><a href="#/" id="sign-up" data-toggle="modal" data-target="#signUp">Join Us</a></li>
           </ul>
         </div>
       </nav>
 
-      <div class="switch-container" ng-switch on="vm.selection">
+      <div class="switch-container">
 
-        <div class="row about" ng-switch-default>
+        <div class="row about">
           <div class="col-xs-10 col-md-8 col-md-offset-2 col-xs-offset-1">
             <h3>About Us</h3>
             <p class="lead"><strong>The Illiterati of Denver</strong> is a social book club for awesome people.  We meet monthly to discuss our current book, reveal our next book selection, and generally hang out and be awesome.</p>
@@ -79,7 +79,7 @@
           </div>
         </div>
 
-        <div class="row current-book" ng-switch-when="currentBook">
+        <div class="row current-book" id="currentBook">
           <div class="col-xs-10 col-md-8 col-md-offset-2 col-xs-offset-1">
             <h2>October's Selection</h2>
             <div class="col-xs-12 col-md-3">
@@ -99,7 +99,7 @@
           </div>
         </div>
 
-        <div class="row next-meeting" ng-switch-when="nextMeeting">
+        <div class="row next-meeting" id="nextMeeting">
           <div class="col-xs-10 col-md-8 col-md-offset-2 col-xs-offset-1">
             <h2>Next Meeting</h2>
             <h3>Monday November 7th, 2016</h3>
